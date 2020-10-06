@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>
+			CADASTRO DE CLIENTES
+		</title>
+		<link rel="stylesheet" href="bootstrap.css">
+	</head>
+	<body>
+	<style>
+	body {
+		background-color: ;
+	}
+	</style>
+	
+		<nav class="navbar navbar-light" style="background-color: #778899;">
+			<div class="container-sm">
+				<h1>
+					<font color="white">
+						CADASTRO DE CLIENTES
+					</font>
+				</h1>
+			</div>
+		</nav>
+		<div class="container">
+			<form class="row">
+				<div >
+					<h4>&nbsp&nbspDigite se você deseja se cadastrar como pessoa Físisca(CPF) ou jurídica(CNPJ):</h4>
+				</div>
+				<div>
+					<select id="select" onchange="escolha()" style="margin-top: 3px">
+					<option value=""></option>
+					<option value="CPF">Física(CPF)</option>
+					<option value="CNPJ">Jurídica(CNPJ)</option>
+					</select>
+				</div>
+			</form>
+			<br/>
+			<form class="row">
+				<div>
+					<label name="nome">&nbsp&nbsp Nome:</label>
+				</div>
+				<div class="col-3">
+					<input type="text" name="nome" class="form-control" style="margin-top: -7px;"></input>
+				</div>
+				
+				<div class="col-1,5">
+					<p size="5" id="retorno">Digite seu:</p>
+
+				<script>
+				function escolha()
+				{
+				var x = document.getElementById("select").value;
+				document.getElementById("retorno").innerHTML =  "Digite seu " + x;
+				}
+				</script>
+				
+				</div>
+				<div class="col-3">
+					<label id="retorno"></label>
+					<input type="text" id="retorno" class="form-control" style="margin-top: -32px"></input>
+				</div>
+				
+				<div class="col-2">
+					<button type="submit" class="btn btn-outline-success" style="margin-top: -7px;">Salvar Informações</button>
+				</div>
+			</form>
+			
+			<br/><br/>
+			
+			<table class="table table-hover">
+				<colgroup>
+					<col width="175">
+					<col width="100">
+					<col width="250">
+					<col width="100">
+					<col width="100">
+				</colgroup>
+				<thead>
+					<th>Nome:</th>
+					<th>CPF/CNPJ</th>
+					<th>Número:</th>
+					<th></th>
+					<th></th>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Seu pai de calcinha</td>
+						<td>CPF</td>
+						<td>BLA BLA B1LA FODASE KKKKK</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>JÃO É GAY</td>
+						<td> CNPJ</td>
+						<td>QUALQUER NÚMERO GAY</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>BRUNO LINDO GOSTOSO</td>
+						<td>CPF</td>
+						<td>PRA QUE CPF SE MEUS OLHOS SÃO ÚNICOS?</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>FUDE</td>
+						<td >CNPJ</td>
+						<td>CNPJ DE FUDE</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>SEU PAI DE CALCINHA SEGUNDA CONTA</td>
+						<td>CNPJ</td>
+						<td>155 FODASE</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+										<tr>
+						<td>Seu pai de calcinha</td>
+						<td>CPF</td>
+						<td>BLA BLA BLA FODASE KKKKK</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>JÃO É GAY</td>
+						<td> CNPJ</td>
+						<td>QUALQUER NÚMERO GAY</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>BRUNO LINDO GOSTOSO</td>
+						<td>CPF</td>
+						<td>PRA QUE CPF SE MEUS OLHOS SÃO ÚNICOS?</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>FUDE</td>
+						<td>CNPJ</td>
+						<td>CNPJ DE FUDE</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>SEU PAI DE CALCINHA SEGUNDA CONTA</td>
+						<td>CNPJ</td>
+						<td>155 FODASE</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+										<tr>
+						<td>Seu pai de calcinha</td>
+						<td>CPF</td>
+						<td>BLA BLA BLA FODASE KKKKK</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>JÃO É GAY</td>
+						<td> CNPJ</td>
+						<td>QUALQUER NÚMERO GAY</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>BRUNO LINDO GOSTOSO</td>
+						<td>CPF</td>
+						<td>PRA QUE CPF SE MEUS OLHOS SÃO ÚNICOS?</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>FUDE</td>
+						<td>CNPJ</td>
+						<td>CNPJ DE FUDE</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>SEU PAI DE CALCINHA SEGUNDA CONTA</td>
+						<td>CNPJ</td>
+						<td>155 FODASE</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+										<tr>
+						<td>Seu pai de calcinha</td>
+						<td>CPF</td>
+						<td>BLA BLA BLA FODASE KKKKK</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>JÃO É GAY</td>
+						<td> CNPJ</td>
+						<td>QUALQUER NÚMERO GAY</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>BRUNO LINDO GOSTOSO</td>
+						<td>CPF</td>
+						<td>PRA QUE CPF SE MEUS OLHOS SÃO ÚNICOS?</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>FUDE</td>
+						<td>CNPJ</td>
+						<td>CNPJ DE FUDE</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+					<tr>
+						<td>SEU PAI DE CALCINHA SEGUNDA CONTA</td>
+						<td>CNPJ</td>
+						<td>155 FODASE</td>
+						<td><button type="button" class="btn btn-outline-warning">Editar</button></td>
+						<td><button type="button" class="btn btn-outline-danger">Excluir</button></td>
+					</tr>
+				<tbody>
+			</table>
+		</div>
+	</body>
+</html>
